@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".CreateActivity"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Choose Your Contest Photo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Choose Your Certificate Design"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/contestImage" />
+
+                <ImageView
+                    android:id="@+id/contestImage"
+                    android:layout_width="184dp"
+                    android:layout_height="178dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="12dp"
+                    android:cropToPadding="true"
+                    android:foreground="@drawable/image_border"
+                    android:paddingLeft="5sp"
+                    android:paddingTop="5sp"
+                    android:paddingRight="5sp"
+                    android:paddingBottom="5sp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView31"
+                    app:srcCompat="@drawable/ic_baseline_add_photo_alternate_24" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Create Contest"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/contestBack"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/contestBack"
+                    style="@android:style/Widget.DeviceDefault.ImageButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:background="#FFFFFF"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_back" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Contest Name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/s2" />
+
+                <EditText
+                    android:id="@+id/contestName"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/input_border"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Your Contest Name"
+                    android:paddingLeft="16sp"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView26" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Contest Description"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/contestName" />;
+
+                <EditText
+                    android:id="@+id/contestDescription"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_border"
+                    android:fontFamily="@font/poppins"
+                    android:hint="@string/desc"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="2000"
+                    android:maxLines="2000"
+                    android:paddingLeft="16sp"
+                    android:paddingTop="12sp"
+                    android:paddingEnd="16sp"
+                    android:paddingBottom="60sp"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Release Date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/contestDescription" />
+
+                <EditText
+                    android:id="@+id/contestRelease"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/input_border"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter your Release Date"
+                    android:inputType="date"
+                    android:paddingLeft="16sp"
+                    android:paddingEnd="16sp"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Open Registration Date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/contestRelease" />
+
+                <EditText
+                    android:id="@+id/contestOpen"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/input_border"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter your Open Registration Date"
+                    android:inputType="date"
+                    android:paddingLeft="16sp"
+                    android:paddingEnd="16sp"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="End Registration Date"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/contestOpen" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Select Your Category"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/contestEnd" />
+
+                <EditText
+                    android:id="@+id/contestEnd"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/input_border"
+                    android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter your End Registration Date"
+                    android:inputType="date"
+                    android:paddingLeft="16sp"
+                    android:paddingEnd="16sp"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                <Button
+                    android:id="@+id/contestCreate"
+                    android:layout_width="300dp"
+
+                    android:layout_height="55dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginBottom="28dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Create Contest"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/contestEnd"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Spinner
+                    android:id="@+id/contestCategory"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/input_border"
+                    android:pointerIcon="arrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+                <ImageView
+                    android:id="@+id/s2"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toEndOf="@+id/s1"
+                    app:layout_constraintTop_toBottomOf="@+id/sContain"
+                    app:srcCompat="@drawable/s2" />
+
+                <ImageView
+                    android:id="@+id/s3"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toEndOf="@+id/s2"
+                    app:layout_constraintTop_toBottomOf="@+id/sContain"
+                    app:srcCompat="@drawable/s3" />
+
+                <ImageView
+                    android:id="@+id/s1"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sContain"
+                    app:srcCompat="@drawable/s1" />
+
+                <ImageView
+                    android:id="@+id/sContain"
+                    android:layout_width="176dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/image_border"
+                    android:paddingStart="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="2dp"
+                    android:paddingBottom="2dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView38"
+                    app:srcCompat="@drawable/s1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>

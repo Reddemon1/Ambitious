@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinedActivity">
+
+    <Button
+        android:id="@+id/joinedEdit"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Edit Contest"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joinedBack" />
+
+    <Button
+        android:id="@+id/joinedDelete"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/googlecolor"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Delete Contest"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/joinedEdit"
+        app:layout_constraintTop_toBottomOf="@+id/joinedBack" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Joined User  :"
+        android:textColor="@color/GreenPrimary"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joinedEdit" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerJoined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:overScrollMode="never"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+    <ImageButton
+        android:id="@+id/joinedBack"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+</androidx.constraintlayout.widget.ConstraintLayout>
